@@ -103,4 +103,4 @@ class MainActivity : AppCompatActivity() {
 
         mRealm.close()
     }
-}}
+}

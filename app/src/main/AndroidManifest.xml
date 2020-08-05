@@ -32,6 +32,8 @@
                 android:value="jp.techacademy.date.yuuya.taskapp5.MainActivity"/>
         </activity>
 
+        <receiver android:name=".TaskAlarmReceiver"/>
+
     </application>
 
 </manifest>
