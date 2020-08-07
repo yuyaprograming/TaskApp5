@@ -10,6 +10,7 @@ import io.realm.RealmChangeListener
 import io.realm.Sort
 import android.content.Intent
 import android.support.v7.app.AlertDialog
+import android.util.Log
 
 const val EXTRA_TASK = "jp.techacademy.date.yuuya.taskapp5.TASK"
 

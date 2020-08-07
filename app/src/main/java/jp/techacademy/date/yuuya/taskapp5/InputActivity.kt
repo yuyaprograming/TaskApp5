@@ -8,6 +8,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.View
 import io.realm.Realm
 import kotlinx.android.synthetic.main.content_input.*
@@ -124,7 +125,8 @@ class InputActivity : AppCompatActivity() {
 
         val title = title_edit_text.text.toString()
         val content = content_edit_text.text.toString()
-        val category = category_edit_text.text.toString()
+        val category = ""
+        Log.d("kotlintest", category)
 
         mTask!!.title = title
         mTask!!.contents = content
@@ -149,5 +151,6 @@ class InputActivity : AppCompatActivity() {
 
         val alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
         alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, resultPendingIntent)
+
     }
 }
