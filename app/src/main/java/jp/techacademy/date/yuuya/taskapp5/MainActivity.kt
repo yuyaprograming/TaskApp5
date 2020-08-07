@@ -49,6 +49,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button_category.setOnClickListener {
+            reloadListView()
+        }
+
         // ListViewを長押ししたときの処理
         listView1.setOnItemLongClickListener { parent, _, position, _ ->
             // タスクを削除する

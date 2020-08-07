@@ -21,6 +21,12 @@
             android:layout_height="wrap_content"
             android:hint="カテゴリーを入力してください" />
 
+        <Button
+            android:id="@+id/button_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="カテゴリー検索する"/>
+
         <ListView
             android:id="@+id/listView1"
             android:layout_width="match_parent"
