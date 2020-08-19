@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             // Realmデータベースから、「全てのデータを取得して新しい日時順に並べた結果」を取得
             mRealm.where(Task::class.java).findAll().sort("date", Sort.DESCENDING)
         } else {
-            mRealm.where(Task::class.java).beginsWith("category", category_home.text.toString()).findAll().sort("date", Sort.DESCENDING)
+            mRealm.where(Task::class.java).equalTo("category", category_home.text.toString()).findAll().sort("date", Sort.DESCENDING)
         }
 
         // 上記の結果を、TaskList としてセットする
